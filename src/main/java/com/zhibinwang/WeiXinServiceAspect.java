@@ -61,6 +61,7 @@ public class WeiXinServiceAspect {
 
     @Around("shareAnntion()")
     public void arround(ProceedingJoinPoint joinPoint){
+
         long l = System.currentTimeMillis();
         try{        Object proceed = joinPoint.proceed();}catch (Exception e){} catch (Throwable throwable) {
             throwable.printStackTrace();
